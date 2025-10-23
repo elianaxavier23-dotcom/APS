@@ -9,7 +9,7 @@ public class Professor {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private int id;
 
     private String nome;
     private String disciplina;
@@ -19,7 +19,7 @@ public class Professor {
 
     public Professor() {}
 
-    public Long getId() { return id; }
+    public int getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
     public String getNome() { return nome; }
